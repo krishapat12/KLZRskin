@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-struct oily_skin_view: View {
+struct oilyVersiontwo: View {
     @State var choiceMade = "Pick a product"
     var body: some View {
         VStack{
