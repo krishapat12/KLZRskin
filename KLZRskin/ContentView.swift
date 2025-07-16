@@ -9,85 +9,70 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(spacing:10){
-            Image("banner")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 200.0)
-
-          
+        ZStack {
+            Color(red: 250/255, green: 246/255, blue: 242/255)
+                .ignoresSafeArea()
             
-            
-                .padding()
-             
-                Text("Unbiased Information. Accessible to everyone.")
-                .fontWeight(.bold)
+            ScrollView {
+                VStack(spacing: 30) {
+                    Image("banner")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(maxWidth: .infinity, maxHeight: 200)
+                        .padding(.horizontal)
 
-                .font(.custom("HelveticaNeue", size:30))
-                .multilineTextAlignment(.leading)
-                .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
+                    Text("Unbiased Information. Accessible to everyone.")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.leading)
+                        .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
+                        .padding(.horizontal)
 
-                Text("")
-                 
-                
-              
-                    Text("About the app:")
-                    .fontWeight(.bold)
+                    Text("About the App")
+                        .font(.title)
+                        .fontWeight(.medium)
+                        .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
 
-                    .font(.custom("HelveticaNeue", size:30))
-                    .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
-
-                    Text("Based on your skin type a  series of skincare prodcuts will be recommended.")
-                .font(.custom("HelveticaNeue", size:25))
-                .fontWeight(.bold)
-                .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
-                .multilineTextAlignment(.center)
-                .padding(.horizontal)
-                    
-
-                    Text("")
-                    Text("")
-                    HStack{
-                        
-                        Text("Want to learn your skin type?")
-                            .fontWeight(.bold)
-
-                            .font(.system(size:30))
-                            .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
-                            .multilineTextAlignment(.center)
-
-                        Button("Click me") {
-                                
-                        
-                        }
-                        .padding(.all)
-                        
-                        .font(.system(size:20))
-                        .fontWeight(.bold)
+                    Text("KLZRskin provides tailored skincare recommendations based on your skin type using scientifically supported data.")
+                        .font(.custom("HelveticaNeue", size: 20))
+                        .fontWeight(.medium)
                         .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
-                        .border(Color.black, width:1)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
 
-                      
+                    Button(action: {
+                        //contect to next quiz page
+                    }) {
+                        Text("Find Your Skin Type")
+                            .font(.system(size: 20, weight: .bold))
+                            .padding()
+                            .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.black, lineWidth: 1)
+                            )
                     }
-            HStack{
-            Image("tree")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fit)
-                Image("tree")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fit)
-                Image("tree")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fit)
-                Image("tree")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fit)
+                    .padding(.top, 10)
+                    .padding(.horizontal)
+
+                    HStack(spacing: 10) {
+                        ForEach(0..<4) { _ in
+                            Image("tree")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 50, height: 50)
+                        }
+                    }
+                    .padding(.horizontal)
+                    .padding(.top, 10)
+                }
+                .padding(.vertical, 40)
             }
-            }
-        
-        Spacer()
+        }
     }
 }
+
 #Preview {
     ContentView()
 }
+
