@@ -40,7 +40,7 @@ struct SwiftUIView: View {
                     .padding(.horizontal)
             }
             
-            Text("If you have a tendency to break out or develop rashes easily and notice redness, itching, burning, or stinging, click on the sensitive skin icon. It's best to manage sensitive skin before ")
+            Text("If you have a tendency to break out or develop rashes easily and notice redness, itching, burning, or stinging, click on the sensitive skin icon. ")
                 .font(.subheadline)
                 .fontWeight(.semibold)
                 .padding(.vertical, 7.0)
