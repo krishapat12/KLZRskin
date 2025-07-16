@@ -6,13 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		BDD64D182E282506007D053C /* testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD64D172E282506007D053C /* testing.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		BD3939032E26B7E9008EDA03 /* KLZRskin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLZRskin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDD64D172E282506007D053C /* testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -37,7 +32,6 @@
 		BD3938FA2E26B7E9008EDA03 = {
 			isa = PBXGroup;
 			children = (
-				BDD64D172E282506007D053C /* testing.swift */,
 				BD3939052E26B7E9008EDA03 /* KLZRskin */,
 				BD3939042E26B7E9008EDA03 /* Products */,
 			);
@@ -125,7 +119,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD64D182E282506007D053C /* testing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
