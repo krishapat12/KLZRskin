@@ -1,5 +1,5 @@
 //
-//  dryView.swift
+//  sensitiveView.swift
 //  KLZRskin
 //
 //  Created by Scholar on 7/15/25.
@@ -7,21 +7,17 @@
 
 import SwiftUI
 
-struct DrySkinView: View {
+struct sensitiveView: View {
     @State var choiceMade = "Pick a product"
     var body: some View {
-        VStack(spacing:20){
-            Text("Dry Skin")
-                .font(.custom("HelveticaNeue", size:60))
-                .fontWeight(.bold)
-                .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
-            Text("Click on the dropdown below to access the skincare options for managing dry skin.")
-                .fontWeight(.bold)
+        VStack{
+            Text("Sensitive skin")
+                .font(.custom("HelveticaNeue", size:80))
+                .foregroundColor(Color(hue: 0.229, saturation: 0.251, brightness: 0.667))
+                .multilineTextAlignment(.center)
+            Text("Learn about cleanser, toner, serum, and mosturizer from the dropdown below. We have included a variety of products to give options. ")
                 .multilineTextAlignment(.center)
                 .font(.custom("HelveticaNeue", size:25))
-                .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
-                .padding(.horizontal)
-
 
             Text("")
             Menu{
@@ -50,23 +46,19 @@ struct DrySkinView: View {
             }
             label:{
                 Label(
-                    title: {Text("\(choiceMade)")
-                            .font(.title2)
-                            .fontWeight(.semibold)
-                        .foregroundColor(Color.black) },
+                    title: {Text("\(choiceMade)") },
                     icon:{Image(systemName:"plus")}
                 )
             
             }
-            .padding(.all)
             .frame(width: 300.0, height: 50.0)
-            .border(Color.black, width:1)
+            .border(Color.black, width:2)
             Spacer()
         }
     }
 }
 
 #Preview {
-    DrySkinView()
+    sensitiveView()
 }
  

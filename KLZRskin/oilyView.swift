@@ -9,14 +9,20 @@ import SwiftUI
 struct oily_skin_view: View {
     @State var choiceMade = "Pick a product"
     var body: some View {
-        VStack{
+        VStack(spacing:20){
             Text("Oily Skin")
-                .foregroundColor(Color(hue: 0.229, saturation: 0.251, brightness: 0.667))
-                .font(.custom("HelveticaNeue", size:80))
-            Text("Learn about cleanser, toner, serum, and mosturizer from the dropdown below. We have included a variety of products to give options. ")
+                .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
+                .font(.custom("HelveticaNeue", size:60))
+                .fontWeight(.bold)
+
+            Text("Click on the dropdown below to access the skincare options for managing oily skin.")
                 .font(.custom("HelveticaNeue", size:25))
                 .multilineTextAlignment(.center)
-            
+                .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
+                .fontWeight(.bold)
+                .padding(.horizontal)
+
+
             Text("")
             
             Menu{
@@ -25,7 +31,6 @@ struct oily_skin_view: View {
                     //add the code to that pops up the description of the cleanser
                 },label:{
                     Text("Cleanser")
-                        .foregroundColor(Color.black)
                 })
                 Button(action:{
                     choiceMade="Serum"
@@ -41,23 +46,22 @@ struct oily_skin_view: View {
                 },label:{
                     Text("Mosturizer")
                 })
-                Button(action:{
-                    choiceMade="Toner"
-                    //add the code to that pops up the description of the toner
-                    
-                },label:{
-                    Text("Toner")
-                })
+                
             }
             label:{
                 Label(
-                    title: {Text("\(choiceMade)") },
+                    title: {Text("\(choiceMade)")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                        .foregroundColor(Color.black) },
+                    
                     icon:{Image(systemName:"plus")}
                 )
                 
             }
+            .padding(.all)
             .frame(width: 300.0, height: 50.0)
-            .border(Color.black, width:2)
+            .border(Color.black, width:1)
             Spacer()
         }
     }
@@ -67,3 +71,5 @@ struct oily_skin_view: View {
 #Preview {
     oily_skin_view()
 }
+
+
