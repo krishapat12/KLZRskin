@@ -26,8 +26,7 @@ struct DrySkinView: View {
                 Button("Cleanser") {
                     productName = "Vanicream Gentle Cleanser"
                     selectedProduct = "This product is a great choice for anyone with dry or sensitive skin because it cleanses the face gently without stripping away moisture. Unlike many harsh cleansers, it contains no irritating ingredients or added fragrance, making it ideal for those prone to dryness or irritation. By preserving the skin’s natural oils, it helps maintain a healthy moisture balance, leaving the skin clean, soft, and comfortable after each use."
-                    
-                    
+                   
                 }
                 
                 Button("Serum") {
