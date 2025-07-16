@@ -24,16 +24,16 @@ struct sensitiveview: View {
 
       Menu("Pick a Product") {
         Button("Cleanser") {
-          productName = ""
-          selectedProduct = ""
+          productName = "La Roche-Posay Tolerine Hydrating Gentle Cleanser"
+          selectedProduct = "This product cleanses the skin gently without causing irritation, making it ideal for those with sensitive or easily reactive skin. It’s free from fragrance and harsh ingredients, reducing the risk of dryness or discomfort. By maintaining the skin’s natural balance, it helps keep your complexion calm, clear, and healthy with every use."
         }
         Button("Serum") {
-          productName = "x"
-          selectedProduct = "serum text"
+          productName = "The Ordinary Azelaic Acid Suspension 10%"
+          selectedProduct = "This product is designed to help calm irritation while gently improving the appearance of your skin. It works to even out skin tone by fading dark spots over time, making it a great option for those looking to achieve a more radiant complexion. It's also a suitable alternative for individuals who are sensitive to retinoids or vitamin C, offering noticeable results without the risk of irritation."
         }
         Button("Moisturizer") {
-          productName = "x"
-          selectedProduct = "moisturizer text"
+          productName = ""
+          selectedProduct = "This gentle daily moisturizer soothes and protects sensitive skin while defending against environmental stress. With broad-spectrum SPF 30, it shields skin from harmful UV rays without causing irritation. The non-greasy, fast-absorbing formula won’t clog pores, making it perfect for everyday wear."
         }
       }
       .padding()
