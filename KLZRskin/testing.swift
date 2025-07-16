@@ -11,7 +11,7 @@ struct normalView: View {
 @State private var productName: String? = nil
   var body: some View {
     VStack{
-        Text("Sensitive Skin")
+        Text("Normal skin")
             .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
             .font(.custom("HelveticaNeue", size:60))
             .fontWeight(.bold)
@@ -21,7 +21,6 @@ struct normalView: View {
             .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
             .fontWeight(.bold)
             .padding(.horizontal)
-        Text("testing")
 
       Menu("Pick a Product") {
         Button("Cleanser") {
@@ -54,5 +53,5 @@ struct normalView: View {
   }
 }
 #Preview {
-    noramlView()
+    normalView()
 }
