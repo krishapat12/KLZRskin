@@ -46,7 +46,7 @@ struct oily_skin_view: View {
                 },label:{
                     Text("Mosturizer")
                 })
-                
+
             }
             label:{
                 Label(
