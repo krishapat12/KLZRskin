@@ -1,75 +1,64 @@
 //
-//  oilyView.swift
+//  sensitiveView.swift
 //  KLZRskin
 //
 //  Created by Scholar on 7/15/25.
 //
 
 import SwiftUI
-struct oily_skin_view: View {
+
+struct sensitiveView: View {
     @State var choiceMade = "Pick a product"
     var body: some View {
-        VStack(spacing:20){
-            Text("Oily Skin")
-                .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
-                .font(.custom("HelveticaNeue", size:60))
-                .fontWeight(.bold)
-
-            Text("Click on the dropdown below to access the skincare options for managing oily skin.")
-                .font(.custom("HelveticaNeue", size:25))
+        VStack{
+            Text("Sensitive skin")
+                .font(.custom("HelveticaNeue", size:80))
+                .foregroundColor(Color(hue: 0.229, saturation: 0.251, brightness: 0.667))
                 .multilineTextAlignment(.center)
-                .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
-                .fontWeight(.bold)
-                .padding(.horizontal)
-
+            Text("Learn about cleanser, toner, serum, and mosturizer from the dropdown below. We have included a variety of products to give options. ")
+                .multilineTextAlignment(.center)
+                .font(.custom("HelveticaNeue", size:25))
 
             Text("")
-            
             Menu{
                 Button(action:{
                     choiceMade="Cleanser"
                     //add the code to that pops up the description of the cleanser
                 },label:{
                     Text("Cleanser")
+                        .foregroundColor(Color.black)
                 })
                 Button(action:{
                     choiceMade="Serum"
                     //add the code to that pops up the description of the serum
-                    
+
                 },label:{
                     Text("Serum")
                 })
                 Button(action:{
                     choiceMade="Mosturizer"
                     //add the code to that pops up the description of the mosturizer
-                    
+
                 },label:{
                     Text("Mosturizer")
                 })
-
+               
             }
             label:{
                 Label(
-                    title: {Text("\(choiceMade)")
-                            .font(.title2)
-                            .fontWeight(.semibold)
-                        .foregroundColor(Color.black) },
-                    
+                    title: {Text("\(choiceMade)") },
                     icon:{Image(systemName:"plus")}
                 )
-                
+            
             }
-            .padding(.all)
             .frame(width: 300.0, height: 50.0)
-            .border(Color.black, width:1)
+            .border(Color.black, width:2)
             Spacer()
         }
     }
 }
 
-
 #Preview {
-    oily_skin_view()
+    sensitiveView()
 }
-
-
+ 

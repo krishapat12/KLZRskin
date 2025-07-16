@@ -12,11 +12,13 @@ struct DrySkinView: View {
 @State private var productName: String? = nil
     
     var body: some View {
-        VStack{
+        VStack(spacing:20){
             Text("Dry Skin")
-                .font(.custom("HelveticaNeue", size:80))
-                .foregroundColor(Color(hue: 0.229, saturation: 0.251, brightness: 0.667))
-            Text("Learn about cleanser, toner, serum, and mosturizer from the dropdown below. We have included a variety of products to give options. ")
+                .font(.custom("HelveticaNeue", size:60))
+                .fontWeight(.bold)
+                .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
+            Text("Click on the dropdown below to access the skincare options for managing dry skin.")
+                .fontWeight(.bold)
                 .multilineTextAlignment(.center)
                 .font(.custom("HelveticaNeue", size:25))
             
@@ -44,7 +46,44 @@ struct DrySkinView: View {
                 
             }
             .padding()
-            
+            =======
+                .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
+                .padding(.horizontal)
+
+
+            Text("")
+            Menu{
+                Button(action:{
+                    choiceMade="Cleanser"
+                    //add the code to that pops up the description of the cleanser
+                },label:{
+                    Text("Cleanser")
+                        .foregroundColor(Color.black)
+                })
+                Button(action:{
+                    choiceMade="Serum"
+                    //add the code to that pops up the description of the serum
+
+                },label:{
+                    Text("Serum")
+                })
+                Button(action:{
+                    choiceMade="Mosturizer"
+                    //add the code to that pops up the description of the mosturizer
+
+                },label:{
+                    Text("Mosturizer")
+                })
+               
+            }
+            label:{
+                Label(
+                    title: {Text("\(choiceMade)")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                        .foregroundColor(Color.black) },
+                    icon:{Image(systemName:"plus")}
+                )
             
             if let name = productName {
                 Text(name)
@@ -63,6 +102,10 @@ struct DrySkinView: View {
            
             
             
+            .padding(.all)
+            .frame(width: 300.0, height: 50.0)
+            .border(Color.black, width:1)
+            Spacer()
         }
         
         
