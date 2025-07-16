@@ -9,55 +9,82 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(spacing:1){
-            Image("Image")
+        VStack(spacing:10){
+            Image("banner")
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 400.00, height: 200.0)
-                
-            Text("Welcome")
-                .font(.system(size:80))
-                .fontWeight(.heavy)
-                
-                .foregroundColor(Color(hue: 0.229, saturation: 0.251, brightness: 0.667))
-                .multilineTextAlignment(.center)
-            Text("to KLZR Glow")
-                .font(.system(size:40))
+                .frame(height: 200.0)
+
+          
+            
             
                 .padding()
              
-                Text("Our story:")
-                .font(.system(size:25))
+                Text("Unbiased Information. Accessible to everyone.")
+                .fontWeight(.bold)
+
+                .font(.custom("HelveticaNeue", size:30))
                 .multilineTextAlignment(.leading)
-            
-                Text("We wanted to create an app that have unbiased advice about skincare. ")
-                .font(.system(size:20))
+                .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
+
                 Text("")
                  
                 
               
                     Text("About the app:")
-                    .font(.system(size:25))
+                    .fontWeight(.bold)
+
+                    .font(.custom("HelveticaNeue", size:30))
+                    .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
 
                     Text("Based on your skin type a  series of skincare prodcuts will be recommended.")
-                .font(.system(size:20))
+                .font(.custom("HelveticaNeue", size:25))
+                .fontWeight(.bold)
+                .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
+                    
 
                     Text("")
                     Text("")
                     HStack{
                         
-                        Text("Click to learn your skin type")
-                            .font(.system(size:20))
+                        Text("Want to learn your skin type?")
+                            .fontWeight(.bold)
+
+                            .font(.system(size:30))
+                            .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
+                            .multilineTextAlignment(.center)
 
                         Button("Click me") {
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                                
                         
                         }
+                        .padding(.all)
+                        
                         .font(.system(size:20))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
+                        .border(Color.black, width:1)
+
+                      
                     }
-          
-            
-        }
+            HStack{
+            Image("tree")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                Image("tree")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                Image("tree")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                Image("tree")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+            }
+            }
+        
         Spacer()
     }
 }
