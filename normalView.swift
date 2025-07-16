@@ -20,6 +20,7 @@ struct normalView: View {
             .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
             .fontWeight(.bold)
             .padding(.horizontal)
+        Text("testing")
 
       Menu("Pick a Product") {
         Button("Cleanser") {
