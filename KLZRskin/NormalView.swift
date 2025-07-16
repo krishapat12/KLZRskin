@@ -1,12 +1,12 @@
 //
-//  testing.swift
+//  NormalView.swift
 //  KLZRskin
 //
 //  Created by Scholar on 7/16/25.
 //
 
 import SwiftUI
-struct normalView: View {
+struct NormalView: View {
 @State private var selectedProduct: String? = nil
 @State private var productName: String? = nil
   var body: some View {
@@ -53,5 +53,5 @@ struct normalView: View {
   }
 }
 #Preview {
-    normalView()
+    NormalView()
 }
