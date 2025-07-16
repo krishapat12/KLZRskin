@@ -25,16 +25,16 @@ struct oilySkinView: View {
 
       Menu("Pick a Product") {
         Button("Cleanser") {
-          productName = ""
-          selectedProduct = ""
+          productName = "CeraVe Foaming Facial Cleanser "
+          selectedProduct = "This cleanser is a great choice for anyone with oily or acne-prone skin because it gently removes excess oil and impurities without over-drying. Unlike harsh cleansers that can disrupt the skin barrier, it’s formulated with ceramides and niacinamide to support healthy skin. Free of fragrance and irritating ingredients, it leaves the skin feeling clean, balanced, and refreshed after every use."
         }
         Button("Serum") {
-          productName = "x"
-          selectedProduct = "serum text"
+          productName = "The Ordinary Niacinamide+ Zinc"
+          selectedProduct = "This lightweight serum is a great pick for those dealing with visible pores, uneven texture, or frequent breakouts. With 10% niacinamide and 1% zinc, it helps minimize the look of pores, improve skin clarity, and refine texture over time. It also works to calm inflammation and reduce the appearance of blemishes, leaving skin looking smoother and more balanced."
         }
         Button("Moisturizer") {
-          productName = "x"
-          selectedProduct = "moisturizer text"
+          productName = "Neutrogena Hydro Boost Water Gel"
+          selectedProduct = "This lightweight water gel moisturiser delivers long-lasting hydration without clogging pores, making it ideal after serum. Formulated with hyaluronic acid, it soothes and strengthens the skin barrier while balancing moisture levels to help control shine. Skin feels fresh, smooth, and comfortably hydrated throughout the day."
         }
       }
       .padding()
