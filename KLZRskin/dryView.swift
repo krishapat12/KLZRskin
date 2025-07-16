@@ -41,13 +41,7 @@ struct DrySkinView: View {
                 },label:{
                     Text("Mosturizer")
                 })
-                Button(action:{
-                    choiceMade="Toner"
-                    //add the code to that pops up the description of the toner
-
-                },label:{
-                    Text("Toner")
-                })
+                
             }
             label:{
                 Label(
