@@ -33,7 +33,7 @@ struct ContentView: View {
                         .fontWeight(.medium)
                         .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
 
-                    Text("KLZRskin provides tailored skincare recommendations based on your skin type using scientifically supported data.")
+                    Text("KLZRglow provides tailored skincare recommendations based on your skin type using scientifically supported data.")
                         .font(.custom("HelveticaNeue", size: 20))
                         .fontWeight(.medium)
                         .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
@@ -55,18 +55,21 @@ struct ContentView: View {
                     .padding(.top, 10)
                     .padding(.horizontal)
 
-                    HStack(spacing: 10) {
-                        ForEach(0..<4) { _ in
-                            Image("tree")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 50, height: 50)
-                        }
-                    }
-                    .padding(.horizontal)
-                    .padding(.top, 10)
+                    VStack {
+                                Image("imagee")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.bottom, 100.0)
+                                    .frame(maxWidth: .infinity)
+                            }
+                    Spacer()
+                    Spacer()
+                    .padding(.bottom, 200)
+                        
+                    
+                    //.padding(.top, 10)
                 }
-                .padding(.vertical, 40)
+                //.padding(.vertical, 40)
             }
         }
     }
