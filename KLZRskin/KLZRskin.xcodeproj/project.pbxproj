@@ -8,16 +8,7 @@
 
 /* Begin PBXFileReference section */
 		BD3939032E26B7E9008EDA03 /* KLZRskin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLZRskin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD7E68752E298210008B6935 /* KLZRskin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KLZRskin.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		BD3939052E26B7E9008EDA03 /* KLZRskin */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = KLZRskin;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BD3939002E26B7E9008EDA03 /* Frameworks */ = {
@@ -33,7 +24,6 @@
 		BD3938FA2E26B7E9008EDA03 = {
 			isa = PBXGroup;
 			children = (
-				BD3939052E26B7E9008EDA03 /* KLZRskin */,
 				BD3939042E26B7E9008EDA03 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,13 +32,6 @@
 			isa = PBXGroup;
 			children = (
 				BD3939032E26B7E9008EDA03 /* KLZRskin.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BD7E68762E298210008B6935 /* Products */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +50,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				BD3939052E26B7E9008EDA03 /* KLZRskin */,
 			);
 			name = KLZRskin;
 			packageProductDependencies = (
@@ -105,12 +85,6 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BD3939042E26B7E9008EDA03 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = BD7E68762E298210008B6935 /* Products */;
-					ProjectRef = BD7E68752E298210008B6935 /* KLZRskin.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				BD3939022E26B7E9008EDA03 /* KLZRskin */,
@@ -266,7 +240,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
-				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -294,7 +267,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
-				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
