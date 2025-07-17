@@ -24,16 +24,16 @@ struct NormalView: View {
 
       Menu("Pick a Product") {
         Button("Cleanser") {
-          productName = ""
-          selectedProduct = ""
+          productName = "Cetaphil Gentle Skin Cleanser"
+          selectedProduct = "This gentle, non-irritating cleanser is ideal for normal to sensitive skin. Its soap-free, fragrance-free formula helps reduce the risk of dryness or irritation, making it suitable for daily use. It effectively removes dirt and impurities without stripping the skin’s natural moisture, leaving it soft, calm, and clean."
         }
         Button("Serum") {
-          productName = "x"
-          selectedProduct = "serum text"
+          productName = "The Inkey List Hyaluronic Acid Serum"
+          selectedProduct = "This fragrance-free formula hydrates deeply by drawing moisture into the skin, helping to plump and smooth the appearance of fine lines. Gentle and effective, it supports a healthy, refreshed complexion without irritation."
         }
         Button("Moisturizer") {
-          productName = "x"
-          selectedProduct = "moisturizer text"
+          productName = "CeraVE Facial Moisturizing lotion"
+          selectedProduct = "This lightweight, non-greasy lotion is perfect for normal skin. It contains ceramides to help restore and protect the skin barrier, while niacinamide soothes and calms the skin, leaving it hydrated and balanced all day."
         }
       }
       .padding()
