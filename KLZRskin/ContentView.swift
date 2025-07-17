@@ -25,19 +25,19 @@ struct ContentView: View {
                         Text("Unbiased Information. Accessible to everyone.")
                             .font(.largeTitle)
                             .fontWeight(.semibold)
+                            .foregroundColor(Color(red: 0.709, green: 0.645, blue: 0.749))
                             .multilineTextAlignment(.leading)
-                            .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
                             .padding(.horizontal)
                         
                         Text("About the App")
                             .font(.title)
                             .fontWeight(.medium)
-                            .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
+                            .foregroundColor(Color(red: 0.706, green: 0.645, blue: 0.749))
                         
                         Text("KLZRglow provides tailored skincare recommendations based on your skin type using scientifically supported data.")
                             .font(.custom("HelveticaNeue", size: 20))
                             .fontWeight(.medium)
-                            .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
+                            .foregroundColor(Color(red: 0.675, green: 0.735, blue: 0.678))
                             .multilineTextAlignment(.center)
                             .padding(.horizontal)
                         
@@ -45,6 +45,7 @@ struct ContentView: View {
                             Text("Click to learn your skin type")
                                 .font(.subheadline)
                                 .fontWeight(.bold)
+                                .foregroundColor(Color(red: 0.58, green: 0.572, blue: 0.542))
                         }
                         
                         
