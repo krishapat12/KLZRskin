@@ -47,6 +47,14 @@ struct ContentView: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(Color(red: 0.58, green: 0.572, blue: 0.542))
                         }
+                        NavigationLink(destination:journal()){
+                            Text("Click to view the skincare jounral")
+                                .font(.subheadline)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color(red: 0.58, green: 0.572, blue: 0.542))
+                        }
+                    
+                        
                         
                         
                         .padding(.top, 10)
