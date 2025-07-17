@@ -34,7 +34,7 @@ struct ContentView: View {
                         .foregroundColor(Color(hue: 0.953, saturation: 0.141, brightness: 0.503))
 
                     Text("KLZRglow provides tailored skincare recommendations based on your skin type using scientifically supported data.")
-                        .font(.custom("HelveticaNeue", size: 20))
+                        .font(.title2)
                         .fontWeight(.medium)
                         .foregroundColor(Color(hue: 0.222, saturation: 0.104, brightness: 0.593))
                         .multilineTextAlignment(.center)
