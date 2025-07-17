@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		BD37DA5F2E298DA80040A413 /* KLZRskin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KLZRskin.xcodeproj; sourceTree = "<group>"; };
 		BD3939032E26B7E9008EDA03 /* KLZRskin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLZRskin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD7E68752E298210008B6935 /* KLZRskin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KLZRskin.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -30,6 +30,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD37DA602E298DA80040A413 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		BD3938FA2E26B7E9008EDA03 = {
 			isa = PBXGroup;
 			children = (
@@ -42,13 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				BD3939032E26B7E9008EDA03 /* KLZRskin.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BD7E68762E298210008B6935 /* Products */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,8 +107,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = BD7E68762E298210008B6935 /* Products */;
-					ProjectRef = BD7E68752E298210008B6935 /* KLZRskin.xcodeproj */;
+					ProductGroup = BD37DA602E298DA80040A413 /* Products */;
+					ProjectRef = BD37DA5F2E298DA80040A413 /* KLZRskin.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -266,7 +266,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
-				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -294,7 +293,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
-				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
