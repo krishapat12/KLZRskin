@@ -36,7 +36,7 @@ struct oilySkinView: View {
                     ShowImageOilyCleanser=true
                 }
                 Button("Serum") {
-                    productName = "The Ordinary Niacinamide+ Zinc"
+                    productName = "The Ordinary Niacinamide + Zinc"
                     selectedProduct = "This lightweight serum is a great pick for those dealing with visible pores, uneven texture, or frequent breakouts. With 10% niacinamide and 1% zinc, it helps minimize the look of pores, improve skin clarity, and refine texture over time. It also works to calm inflammation and reduce the appearance of blemishes, leaving skin looking smoother and more balanced."
                     ShowImageOilyMoisturizer=false
                     ShowImageOilyCleanser=false
